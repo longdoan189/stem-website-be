@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "examples",
+  "info": {
+    "singularName": "example",
+    "pluralName": "examples",
+    "displayName": "example"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "number": {
+      "type": "float"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "boolean": {
+      "type": "boolean"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "json": {
+      "type": "json"
+    },
+    "email": {
+      "type": "email"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "password": {
+      "type": "password"
+    },
+    "list": {
+      "type": "enumeration",
+      "enum": [
+        "north",
+        "east",
+        "south",
+        "west",
+        "central"
+      ]
+    }
+  }
+}
