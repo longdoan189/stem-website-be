@@ -4,7 +4,8 @@
   "info": {
     "singularName": "example",
     "pluralName": "examples",
-    "displayName": "example"
+    "displayName": "example",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,18 +24,19 @@
     "time": {
       "type": "datetime"
     },
-    "boolean": {
+    "true_false": {
       "type": "boolean"
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "json": {
       "type": "json"
