@@ -12,14 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ten": {
+    "name": {
       "type": "string"
     },
-    "class": {
+    "role": {
       "type": "string"
     },
     "bio": {
       "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }
