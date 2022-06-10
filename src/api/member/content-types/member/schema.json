@@ -25,14 +25,47 @@
       "type": "string"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "email": {
+      "type": "email"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "hibernating",
+        "former"
+      ]
+    },
+    "joinedSince": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "major": {
+      "type": "string"
+    },
+    "minor": {
+      "type": "string"
+    },
+    "interests": {
+      "type": "richtext"
     }
   }
 }
