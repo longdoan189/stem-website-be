@@ -66,6 +66,12 @@
     },
     "interests": {
       "type": "richtext"
+    },
+    "classOf": {
+      "type": "string"
+    },
+    "priorityLevel": {
+      "type": "integer"
     }
   }
 }
