@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "projects",
+  "collectionName": "events",
   "info": {
-    "singularName": "project",
-    "pluralName": "projects",
-    "displayName": "Project",
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
     "description": ""
   },
   "options": {
@@ -18,19 +18,18 @@
     "description": {
       "type": "richtext"
     },
+    "slug": {
+      "type": "uid"
+    },
     "featureImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "slug": {
-      "type": "uid"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
